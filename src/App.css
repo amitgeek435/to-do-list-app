@@ -1,5 +1,9 @@
+body{
+  background-color: #282c34 !important;
+}
 .App {
   text-align: center;
+  /* background-color: #282c34; */
 }
 
 .App-logo {
@@ -14,7 +18,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +30,77 @@
 
 .App-link {
   color: #61dafb;
+}
+/**To Do list Css*/
+.card,.card-body{
+  border-radius: 15px !important;
+}
+.text-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-list{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+.add-todo-text{
+  margin-right: 15px;
+}
+.add-todo-btn:hover{
+  background-color: #38ef7d !important;
+  color: #282c34 !important;
+  transition-delay: 0.3ms !important;
+}
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+.form__field {
+  font-family: inherit;
+  width: 60%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #11998e;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:focus {
+  padding-bottom: 3px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+ul{
+  margin-top: 30px !important;
+}
+.delete-item{
+  z-index: 9999;
+  margin-right: 10px;
+  padding: 0px 5px 3px 5px !important;
+  border-radius: 50% !important;
+  align-items: center;
+}
+li{
+  list-style: none;
+  text-transform: capitalize;
 }
 
 @keyframes App-logo-spin {
