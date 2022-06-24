@@ -94,7 +94,7 @@ ul{
 .delete-item{
   z-index: 9999;
   margin-right: 10px;
-  padding: 0px 5px 3px 5px !important;
+  padding: 0px 2px 2px 2px !important;
   border-radius: 50% !important;
   align-items: center;
 }

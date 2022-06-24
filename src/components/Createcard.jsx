@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import ToDoLists from "./ToDoLists";
+import AddIcon from "@mui/icons-material/Add";
 
 const text = "text";
 const newStyleCard = {
@@ -19,8 +20,8 @@ const cardBody = {
   backgroundColor: "#ddd",
 };
 const CreateCard = () => {
-  const [items, setItems] = useState([]);
   const [inputList, setinputList] = useState("");
+  const [items, setItems] = useState([]);
   const itemEvent = (event) => {
     setinputList(event.target.value);
   };
@@ -61,7 +62,7 @@ const CreateCard = () => {
                 className="add-todo-btn"
                 onClick={listofItem}
               >
-                Add
+                <AddIcon />
               </Button>
               <ol>
                 {/* <li>{inputList}</li> */}
